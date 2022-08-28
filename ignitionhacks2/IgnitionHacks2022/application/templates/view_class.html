@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title> attendace spreadsheet </title>
+</head>
+
+<body>
+    <table class="table">
+        <tr class="table__header">
+            {% for header in headings %}
+            <th class="tabel__cell"> {{ header }} </th>
+            {% endfor %} 
+        </tr>
+
+        {% for student in data %}
+        <tr class="table__row">
+            {% if student %}
+                <td class="table__cell">
+                    {{ student.name }}
+                </td>
+
+                <td class="table__cell">
+                    {{ student.id }}
+                </td>
+
+                <td class="table__cell">
+                    <img src= {{ student.profile }}, alt={{ student.name }}> 
+                </td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <input type="button" onclick="adding()" value="Add a Student"> </button>
+    <input type="button" onclick="removing()" value="Kick a Student"> </button>
+
+    <script>
+        function adding() {
+            var x;
+            var input = prompt("Please type number 0-9 with no spaces to confirm");
+            if (input == "0123456789") {
+                // jump to the add student page
+                window.location.href='/admin/viewclass/addstudent';
+            }
+        }
+
+        function removing() {
+            var x;
+            var security_input_key = prompt("Please type number 0-9 with no spaces to confirm");
+            if (security_input_key == "0123456789") {
+                // jump to the remove student page
+                window.location.href='/admin/viewclass/kickstudent';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
