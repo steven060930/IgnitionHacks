@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %} Full Attendance Table {% endblock %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin only page</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;"> Hi, {{ user.first_name }} </h1>  <br>
+
+  <div class="btn-group">
+    <a href="/submission" class="btn btn-primary"> Submit class photo </a>
+    <a href="/spreadsheet" class="btn btn-primary"> View attendace spreadsheet </a>
+    <a href="/viewclass" class="btn btn-primary"> View the class members </a>
+    <a href="/viewfullattendance" class="btn btn-primary"> View the missing dates of each student </a> 
+    <a href="/viewmissingstudents" class="btn btn-primary"> View the students missing by date </a>
+  </div>
+</body>
+    
+</html>
+
+{% endblock %}

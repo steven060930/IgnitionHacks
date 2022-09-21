@@ -1,0 +1,109 @@
+.right {
+    height:600px;
+    width: 480px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    border: 2px solid black;
+    place-items: center;
+    place-content: center;
+}
+
+#username {
+    height: 120px;
+    width: 260px;
+    all: unset;
+    padding: 10px;
+    border: 1px solid black;
+    position: absolute;
+    margin-left: 130px;
+    top: 40%;
+    transform: (-50%, -50%);
+}
+
+#password {
+    height: 120px;
+    width: 260px;
+    all: unset;
+    padding: 10px;
+    border: 1px solid black;
+    position: absolute;
+    margin-left: 130px;
+    top: 52%;
+    transform: (-50%, -50%);
+}
+
+#loginlable {
+    size: 40px;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+
+h1{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.button {
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+#submit {
+    position: absolute;
+    height: 90px;
+    width: 160px;
+    left: 33.333333%;
+    top: 70%;
+}
+#non-user{
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+
+label{
+    text-align: center;
+}
+.container{
+    height: 180px;
+    width: 320px;
+    border-color:black;
+    background-color:aqua;
+}
+#dateInput{
+    height: 90px;
+    width: 160px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    border-color: solid black;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #dee2e6;
+    border-spacing: 0;
+    margin: 1rem;
+    background-color: #f5f5f5f5
+}
+.table__row:nth-child(even) {
+    background-color:solid white
+}
+.table__header {
+    text-align:center;
+    font-size: 2.3em;
+}
+.table__cell {
+    text-align: center;
+    padding: 8px;
+}
+
+#inputField{
+    height: 20px;
+    width: 300px;
+}
