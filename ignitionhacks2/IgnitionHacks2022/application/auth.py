@@ -227,5 +227,7 @@ def missingStudents():
     headings, data = ("Date", "Students"), []
     for key in g:
         s = ", ".join(g[key])
+        if len(g[key]) == 0:
+            continue
         data.append((key, s))
     return render_template("missing_students_date.html", headings=headings, data=data)
